@@ -1,6 +1,6 @@
 async function fetchQuote() {
     try {
-        const response = await fetch("https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en");
+        const response = await fetch("https://api.quotable.io/random");
         if (!response.ok) throw new Error("Network response was not ok");
 
         const data = await response.json();
